@@ -1,0 +1,75 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>zyra home</title>
+   <link rel="stylesheet" href="{%static 'style.css' %}">
+
+
+<body>
+   <section id="header">
+      <div class="nav-bar">
+         <div><img src="{% static 'assets/zyralogo.png' %}" class="logo" alt="zyralogo"></div>
+         <div class="nav-items">
+            <ol>
+               <a href="#">
+                  <li>Home</li>
+               </a>
+               <a href="#">
+                  <li>Collections</li>
+               </a>
+               <a href="#">
+                  <li>Products</li>
+               </a>
+               <a href="#">
+                  <li>Contacts</li>
+               </a>
+            </ol>
+         </div>
+         <div class="shop-items">
+            <ol>
+               <a href="#">
+                  <li><img src="{% static '/assets/search.png' %}" class="icon" alt="search-bar"></li>
+               </a>
+               <a href="#">
+                  <li><img src="{% static '/assets/heart.png' %}" class="icon" alt="fav"></li>
+               </a>
+               <a href="#">
+                  <li><img src="{% static '/assets/shopping-bag.png' %}" class="icon" alt="cart"></li>
+               </a>
+            </ol>
+         </div>
+      </div>
+      </div>
+   </section>
+
+   <section id="hero">
+      <div class="paragraph">
+         <h1>Where Grace Meets Gold</h1>
+         <p>Anti-tarnish gold that stays radiant with graceful durability made for everyday elegance.
+         </p>
+         <button class="btn-shop">Shop Now </button>
+      </div>
+      <div class="image"><img src="{% static 'assets/hero-bg.png'%}" alt=""></div>
+
+   </section>
+
+   <section id="popular-collection">
+      <div class="heading-container"><h1>Popular Collections</h1></div>
+      <div class="grid-popular">
+      <div class="box"><img src="{% static 'assets/testp1.jpeg' %}" alt="testimg1" class="box-img"></div>
+      <div class="box"><img src="{% static 'assets/testp2.jpeg' %}" alt="testimg2" class="box-img"></div>
+      <div class="box"><img src="{% static 'assets/testp3.jpeg' %}" alt="testimg3" class="box-img"></div>
+      <div class="box"><img src="{% static 'assets/testp4.jpeg' %}" alt="testimg4" class="box-img"></div> 
+      <div class="box"><img src="{% static 'assets/testp5.jpeg' %}" alt="testimg5" class="box-img"></div> 
+      <div class="box"><img src="{% static 'assets/testp6.jpeg' %}" alt="testimg6" class="box-img"></div> </div>
+      <!-- <div class="bg-img"><img src="{%% static 'assets/popular-bg.png'}" alt="bg-popular"></div> -->
+
+   </section>
+
+</body>
+
+</html>
