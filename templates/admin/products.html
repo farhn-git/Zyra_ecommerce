@@ -1,0 +1,27 @@
+{% extends 'admin/index.html' %}
+{% block content %}
+<div class="productheader">
+    <div class="leftheader"><a href="{% url 'addproducts' %}" class="product-btn">Product</a>
+        <a href="{% url 'addcollection' %}" class="collection-btn">Collection</a>
+    </div>
+    <div class="rightheader"><a href="#" class="filter-btn">Filter</a></div>
+</div>
+
+<div class="product-items">
+    {% for i in data %}
+    <div class="product-card">
+        <div class="card-image">
+            <img class="image1" src="{{ i.image1.url }}" alt="{{ i.name }}">
+            <img class="image2" src="{{ i.image2.url }}" alt="{{ i.name }}">
+        </div>
+        <div class="card-name">{{ i.name }}</div>
+        <div class="card-price">₹{{ i.price }}</div>
+        <div class="card-quantity">Stock: {{ i.quantity }}</div>
+        <div class="manage-btn">
+            <a href="#" class="product-edit-btn">Edit</a>
+        <a href="#" class="product-del-btn">Delete</a>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

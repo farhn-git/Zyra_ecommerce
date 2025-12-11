@@ -1,0 +1,78 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>zyra home</title>
+   <link rel="stylesheet" href="{%static 'style.css' %}">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+   <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Italiana&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet">
+
+
+<body>
+   
+{% include 'users/navbar.html' %}
+
+   <section id="hero">
+      <div class="paragraph">
+         <h1>Where Grace Meets Gold</h1>
+         <p>Anti-tarnish gold that stays radiant with graceful durability made for everyday elegance.
+         </p>
+         <button class="btn-shop">Shop Now </button>
+      </div>
+      <div class="image"><img src="{% static 'assets/hero-bg.png'%}" alt=""></div>
+
+   </section>
+   <div class="line"></div>
+
+   <section id="popular-collection">
+      <div class="heading-container">
+         <h1>Gorgeous Collections</h1>
+      </div>
+      <div class="grid-popular">
+         <div class="box"><img src="{% static 'assets/testp1.jpeg' %}" alt="testimg1" class="box-img"></div>
+         <div class="box"><img src="{% static 'assets/testp2.jpeg' %}" alt="testimg2" class="box-img"></div>
+         <div class="box"><img src="{% static 'assets/testp3.jpeg' %}" alt="testimg3" class="box-img"></div>
+         <div class="box"><img src="{% static 'assets/testp4.jpeg' %}" alt="testimg4" class="box-img"></div>
+         <div class="box"><img src="{% static 'assets/testp5.jpeg' %}" alt="testimg5" class="box-img"></div>
+         <div class="box"><img src="{% static 'assets/testp6.jpeg' %}" alt="testimg6" class="box-img"></div>
+      </div>
+
+
+   </section>
+
+   <section id="footer">
+      <div class="about">
+         <div>Shop All</div>
+
+         <div>Our Story</div>
+
+         <div>Best Seller</div>
+
+         <div>Contact</div>
+
+         <div>FAQ</div>
+         <div>Return Policy</div>
+
+         <div>Terms & Condition</div>
+
+         <div>Shipping & Delivery</div>
+
+         <div>Privacy Policy</div>
+
+         <div>Instagram</div>
+
+         <div>Whatsapp</div>
+
+         Facebook
+      </div>
+   </section>
+
+</body>
+
+</html>
